@@ -12,7 +12,7 @@ import { format } from "date-fns"
 
 
 export function OrdersTable() {  
-  const [date, setDate] = useState<Date>()
+  const [date, setDate] = useState<Date>()  
 
   return (
     <div className="w-full">
