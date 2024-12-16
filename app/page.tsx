@@ -1,14 +1,13 @@
 import Image from 'next/image'
-import { Sidebar } from "@/components/sidebar"
-import { OrdersTable } from "@/components/orders-table"
+import { Sidebar } from "@/components/Sidebar"
+import { InventoryTable } from "@/components/InventoryTable"
 import kishimotoImage from './kishimoto.jpg'
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background">
       <Sidebar />
-      <div className="pl-[60px]">
-        {/* Restaurant Image Header */}
+      <div className="pl-[60px]">       
         <div className="bg-black w-full flex justify-center mb-4">
           <Image 
             src={kishimotoImage} 
@@ -17,7 +16,7 @@ export default function Page() {
           />
         </div>
         <main className="container mx-auto py-4">
-          <OrdersTable />
+          <InventoryTable />
         </main>
       </div>
     </div>
